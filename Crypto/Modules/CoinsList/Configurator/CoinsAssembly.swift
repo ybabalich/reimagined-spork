@@ -35,9 +35,9 @@ class CoinsAssembly: Assembly {
         }
         
         container.register(CoinsListViewController.self) { (resolver) in
-            let vc = CoinsListViewController()
-            vc.output = resolver.resolve(CoinsListViewOutput.self, argument: vc)
-            return vc
+            let viewController = CoinsListViewController()
+            viewController.output = resolver.resolve(CoinsListViewOutput.self, argument: viewController)
+            return viewController
         }
         
         container.storyboardInitCompleted(CoinsListViewController.self) { (resolver, viewController) in

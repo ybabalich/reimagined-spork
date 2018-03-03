@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="CoinsListTopView" customModule="Crypto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TTO-gq-prO">
+                    <rect key="frame" x="78.5" y="17" width="218" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your currency:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzo-Og-hng">
+                            <rect key="frame" x="0.0" y="5.5" width="130" height="25"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AFu-th-f4z">
+                            <rect key="frame" x="142" y="0.0" width="76" height="36"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="iiP-0S-Acm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="23"/>
+                            <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
+                            <state key="normal" title="USD $">
+                                <color key="titleColor" red="1" green="0.8901960784313725" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="currencyBtnEvent:" destination="iN0-l3-epB" eventType="touchUpInside" id="dfy-94-4n4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="mzo-Og-hng" firstAttribute="leading" secondItem="TTO-gq-prO" secondAttribute="leading" id="87W-l0-kEB"/>
+                        <constraint firstAttribute="trailing" secondItem="AFu-th-f4z" secondAttribute="trailing" id="fcr-MJ-YAO"/>
+                        <constraint firstItem="AFu-th-f4z" firstAttribute="top" secondItem="TTO-gq-prO" secondAttribute="top" id="h8K-rY-LWU"/>
+                        <constraint firstAttribute="bottom" secondItem="AFu-th-f4z" secondAttribute="bottom" id="nZK-aT-6fv"/>
+                        <constraint firstItem="AFu-th-f4z" firstAttribute="leading" secondItem="mzo-Og-hng" secondAttribute="trailing" constant="12" id="p1q-FU-xB6"/>
+                        <constraint firstItem="mzo-Og-hng" firstAttribute="centerY" secondItem="TTO-gq-prO" secondAttribute="centerY" id="wNi-ab-Z5L"/>
+                    </constraints>
+                </view>
+                <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Joj-2O-amL">
+                    <rect key="frame" x="16" y="65" width="343" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Bj1-cu-FZ2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.16470588235294117" green="0.16470588235294117" blue="0.16470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Joj-2O-amL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="624-i8-F54"/>
+                <constraint firstAttribute="trailing" secondItem="Joj-2O-amL" secondAttribute="trailing" constant="16" id="6Rk-Vo-lzU"/>
+                <constraint firstItem="TTO-gq-prO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8rK-ub-mQg"/>
+                <constraint firstAttribute="bottom" secondItem="Joj-2O-amL" secondAttribute="bottom" constant="4" id="M8P-uL-3M4"/>
+                <constraint firstItem="TTO-gq-prO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="W8E-0v-Dki"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="currencyBtn" destination="AFu-th-f4z" id="oi2-tj-DPV"/>
+            </connections>
+            <point key="canvasLocation" x="-299" y="-482"/>
+        </view>
+    </objects>
+</document>

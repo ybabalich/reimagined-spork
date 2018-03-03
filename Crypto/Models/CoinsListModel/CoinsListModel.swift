@@ -15,7 +15,7 @@ struct CoinsListModel: ServerModel {
     var message: String
     var baseImageUrl: String?
     var baseLinkUrl: String?
-    var elements: [Coin?]
+    var elements: [Coin]
     
     // MARK: - ServerModel
     init?(server data: Any?) {
@@ -25,8 +25,9 @@ struct CoinsListModel: ServerModel {
         message = json["Message"].stringValue
         baseImageUrl = json["BaseImageUrl"].string
         baseLinkUrl = json["BaseLinkUrl"].string
-        elements = json["Data"].dictionary!.values.map({ (json) -> Coin? in
-            return CoinModel(server: json)
+        let baseImageURL = self.baseImageUrl
+        elements = json["Data"].dictionary!.values.map({ (json) -> Coin in
+            return CoinModel(server: json, baseImageUrl: baseImageURL)!
         })
     }
 }

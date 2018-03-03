@@ -36,6 +36,11 @@ struct CoinModel: ServerModel, Coin {
     var sortOrder: Int?
     
     // MARK: - ServerModel
+    init?(server data: Any?, baseImageUrl: String?) {
+        self.init(server: data)
+        imageUrl = "\(baseImageUrl ?? "")" + (imageUrl ?? "")
+    }
+    
     init?(server data: Any?) {
         guard let data = data else { return nil }
         let json = JSON(data)
