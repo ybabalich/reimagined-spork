@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cMX-Xm-eQB" customClass="ConverterKeyboardView" customModule="Crypto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="274"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IU0-5h-i7i">
+                    <rect key="frame" x="0.0" y="0.0" width="326" height="274"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nw-hg-SSb" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="0.0" width="326" height="274"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mZ-xl-aG7" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="82" height="68.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="1">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="rightBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WkU-J5-s0u" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="82" y="0.0" width="82" height="68.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="2">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="rightBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b67-7u-Qlx" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="164" y="0.0" width="82" height="68.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="3">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kKi-7P-ZW8" userLabel="Delete Btn" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="246" y="0.0" width="80" height="90.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="ic_ios_remove">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="leftBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3U-fr-lp3" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="246" y="181" width="80" height="93"/>
+                            <color key="backgroundColor" red="1" green="0.89019607840000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="Done">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="leftBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hQ-ns-8pN" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="68.5" width="82" height="68.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="4">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="rightBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3D-gS-5BN" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="82" y="68.5" width="82" height="68.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="5">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="rightBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJw-V1-HYd" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="163.5" y="68.5" width="82" height="68.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="6">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJ1-h4-tF3" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="137" width="82" height="68.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="7">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="rightBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yij-zY-ckU" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="82" y="137" width="82" height="68.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="8">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="rightBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqs-9g-s7g" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="163.5" y="137" width="82" height="68.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="9">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="bottomBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcP-Dh-Pw1" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="205" width="164.5" height="68.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title="0">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="rightBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijJ-YK-POv" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="164" y="205" width="82" height="68.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                            <state key="normal" title=".">
+                                <color key="titleColor" red="0.12549019610000001" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="rightBorderWidth">
+                                    <real key="value" value="0.0"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRP-6m-bYV" userLabel="Clear Btn" customClass="ButtonRect" customModule="Sash" customModuleProvider="target">
+                            <rect key="frame" x="246" y="90.5" width="80" height="90.5"/>
+                            <color key="backgroundColor" red="0.90980392160000001" green="0.2274509804" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="Clear">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="leftBorderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="leftBorderColor">
+                                    <color key="value" red="0.91764705879999997" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="kKi-7P-ZW8" secondAttribute="trailing" id="104-os-znM"/>
+                        <constraint firstItem="kKi-7P-ZW8" firstAttribute="top" secondItem="b67-7u-Qlx" secondAttribute="top" id="2A2-SF-p6h"/>
+                        <constraint firstItem="TcP-Dh-Pw1" firstAttribute="height" secondItem="eJ1-h4-tF3" secondAttribute="height" id="4k2-yl-XGc"/>
+                        <constraint firstItem="eJ1-h4-tF3" firstAttribute="width" secondItem="0hQ-ns-8pN" secondAttribute="width" id="59n-eP-xcX"/>
+                        <constraint firstItem="yij-zY-ckU" firstAttribute="leading" secondItem="eJ1-h4-tF3" secondAttribute="trailing" id="5nq-eS-YCn"/>
+                        <constraint firstItem="eJ1-h4-tF3" firstAttribute="height" secondItem="0hQ-ns-8pN" secondAttribute="height" id="6KE-Cq-3LW"/>
+                        <constraint firstItem="zJw-V1-HYd" firstAttribute="height" secondItem="u3D-gS-5BN" secondAttribute="height" id="6rY-qI-0Ln"/>
+                        <constraint firstItem="eJ1-h4-tF3" firstAttribute="top" secondItem="0hQ-ns-8pN" secondAttribute="bottom" id="7xW-sB-MwQ"/>
+                        <constraint firstItem="b67-7u-Qlx" firstAttribute="leading" secondItem="WkU-J5-s0u" secondAttribute="trailing" id="99B-o4-Ned"/>
+                        <constraint firstItem="u3D-gS-5BN" firstAttribute="width" secondItem="0hQ-ns-8pN" secondAttribute="width" id="BeX-Sf-xXT"/>
+                        <constraint firstItem="kKi-7P-ZW8" firstAttribute="height" secondItem="0nw-hg-SSb" secondAttribute="height" multiplier="0.33" id="D5A-3r-v5U"/>
+                        <constraint firstItem="eJ1-h4-tF3" firstAttribute="leading" secondItem="0nw-hg-SSb" secondAttribute="leading" id="EoU-zK-xnK"/>
+                        <constraint firstItem="u3D-gS-5BN" firstAttribute="leading" secondItem="0hQ-ns-8pN" secondAttribute="trailing" id="Fiq-ed-Q9I"/>
+                        <constraint firstItem="d3U-fr-lp3" firstAttribute="leading" secondItem="ijJ-YK-POv" secondAttribute="trailing" id="H6v-pV-v49"/>
+                        <constraint firstItem="u3D-gS-5BN" firstAttribute="height" secondItem="0hQ-ns-8pN" secondAttribute="height" id="HMk-7F-RYm"/>
+                        <constraint firstItem="0hQ-ns-8pN" firstAttribute="height" secondItem="8mZ-xl-aG7" secondAttribute="height" id="Hif-yh-5fV"/>
+                        <constraint firstItem="u3D-gS-5BN" firstAttribute="top" secondItem="0hQ-ns-8pN" secondAttribute="top" id="JIf-i6-iYY"/>
+                        <constraint firstItem="d3U-fr-lp3" firstAttribute="top" secondItem="fRP-6m-bYV" secondAttribute="bottom" id="KHy-rI-m7j"/>
+                        <constraint firstItem="WkU-J5-s0u" firstAttribute="top" secondItem="8mZ-xl-aG7" secondAttribute="top" id="NAB-Ce-7c2"/>
+                        <constraint firstItem="d3U-fr-lp3" firstAttribute="leading" secondItem="fRP-6m-bYV" secondAttribute="leading" id="P5X-Ne-qZ1"/>
+                        <constraint firstItem="zJw-V1-HYd" firstAttribute="top" secondItem="u3D-gS-5BN" secondAttribute="top" id="QBx-Eq-00u"/>
+                        <constraint firstAttribute="bottom" secondItem="d3U-fr-lp3" secondAttribute="bottom" id="Qpf-8b-Zws"/>
+                        <constraint firstItem="aqs-9g-s7g" firstAttribute="leading" secondItem="yij-zY-ckU" secondAttribute="trailing" id="SEm-xS-OQw"/>
+                        <constraint firstItem="aqs-9g-s7g" firstAttribute="width" secondItem="yij-zY-ckU" secondAttribute="width" id="SWW-nO-3te"/>
+                        <constraint firstItem="yij-zY-ckU" firstAttribute="width" secondItem="eJ1-h4-tF3" secondAttribute="width" id="Uys-x1-ePY"/>
+                        <constraint firstItem="fRP-6m-bYV" firstAttribute="leading" secondItem="kKi-7P-ZW8" secondAttribute="leading" id="WH3-hH-x1V"/>
+                        <constraint firstItem="ijJ-YK-POv" firstAttribute="leading" secondItem="TcP-Dh-Pw1" secondAttribute="trailing" id="YAg-s9-n7D"/>
+                        <constraint firstItem="kKi-7P-ZW8" firstAttribute="leading" secondItem="b67-7u-Qlx" secondAttribute="trailing" id="YGj-Lf-cdK"/>
+                        <constraint firstItem="b67-7u-Qlx" firstAttribute="width" secondItem="WkU-J5-s0u" secondAttribute="width" id="Zsj-yF-SGy"/>
+                        <constraint firstItem="b67-7u-Qlx" firstAttribute="top" secondItem="WkU-J5-s0u" secondAttribute="top" id="aAZ-HO-xn1"/>
+                        <constraint firstItem="ijJ-YK-POv" firstAttribute="height" secondItem="aqs-9g-s7g" secondAttribute="height" id="aXG-qw-6rP"/>
+                        <constraint firstItem="zJw-V1-HYd" firstAttribute="width" secondItem="u3D-gS-5BN" secondAttribute="width" id="cX3-wP-zGv"/>
+                        <constraint firstItem="fRP-6m-bYV" firstAttribute="trailing" secondItem="kKi-7P-ZW8" secondAttribute="trailing" id="cf0-0w-QhD"/>
+                        <constraint firstItem="aqs-9g-s7g" firstAttribute="top" secondItem="yij-zY-ckU" secondAttribute="top" id="csA-Va-Z3k"/>
+                        <constraint firstItem="8mZ-xl-aG7" firstAttribute="top" secondItem="0nw-hg-SSb" secondAttribute="top" id="dhz-wR-Msh"/>
+                        <constraint firstItem="8mZ-xl-aG7" firstAttribute="width" secondItem="0nw-hg-SSb" secondAttribute="width" multiplier="0.25" id="ebk-sF-z30"/>
+                        <constraint firstAttribute="trailing" secondItem="d3U-fr-lp3" secondAttribute="trailing" id="eqV-l7-6G6"/>
+                        <constraint firstItem="TcP-Dh-Pw1" firstAttribute="leading" secondItem="0nw-hg-SSb" secondAttribute="leading" id="fhf-Rs-KhL"/>
+                        <constraint firstAttribute="bottom" secondItem="TcP-Dh-Pw1" secondAttribute="bottom" id="ibn-iI-4jy"/>
+                        <constraint firstItem="aqs-9g-s7g" firstAttribute="height" secondItem="yij-zY-ckU" secondAttribute="height" id="ijH-Cd-2ig"/>
+                        <constraint firstItem="WkU-J5-s0u" firstAttribute="width" secondItem="8mZ-xl-aG7" secondAttribute="width" id="ixS-Uj-bC6"/>
+                        <constraint firstItem="0hQ-ns-8pN" firstAttribute="top" secondItem="8mZ-xl-aG7" secondAttribute="bottom" id="ksM-w9-3y4"/>
+                        <constraint firstItem="zJw-V1-HYd" firstAttribute="leading" secondItem="u3D-gS-5BN" secondAttribute="trailing" id="lLq-Ve-1uR"/>
+                        <constraint firstItem="ijJ-YK-POv" firstAttribute="top" secondItem="TcP-Dh-Pw1" secondAttribute="top" id="nBq-xx-unf"/>
+                        <constraint firstItem="yij-zY-ckU" firstAttribute="top" secondItem="eJ1-h4-tF3" secondAttribute="top" id="ng1-oi-GLU"/>
+                        <constraint firstItem="fRP-6m-bYV" firstAttribute="height" secondItem="kKi-7P-ZW8" secondAttribute="height" id="nru-eF-pk2"/>
+                        <constraint firstItem="ijJ-YK-POv" firstAttribute="width" secondItem="aqs-9g-s7g" secondAttribute="width" id="oYe-Q9-CFI"/>
+                        <constraint firstItem="b67-7u-Qlx" firstAttribute="height" secondItem="WkU-J5-s0u" secondAttribute="height" id="pGd-Rb-a5X"/>
+                        <constraint firstItem="0hQ-ns-8pN" firstAttribute="width" secondItem="8mZ-xl-aG7" secondAttribute="width" id="pRX-kj-Acu"/>
+                        <constraint firstItem="WkU-J5-s0u" firstAttribute="leading" secondItem="8mZ-xl-aG7" secondAttribute="trailing" id="qBt-AU-gN1"/>
+                        <constraint firstItem="yij-zY-ckU" firstAttribute="height" secondItem="eJ1-h4-tF3" secondAttribute="height" id="qTD-eY-UFk"/>
+                        <constraint firstItem="WkU-J5-s0u" firstAttribute="height" secondItem="8mZ-xl-aG7" secondAttribute="height" id="s5i-N5-BUy"/>
+                        <constraint firstItem="8mZ-xl-aG7" firstAttribute="height" secondItem="0nw-hg-SSb" secondAttribute="height" multiplier="0.25" id="uzK-Ty-PTC"/>
+                        <constraint firstItem="fRP-6m-bYV" firstAttribute="top" secondItem="kKi-7P-ZW8" secondAttribute="bottom" id="vac-16-yti"/>
+                        <constraint firstItem="0hQ-ns-8pN" firstAttribute="leading" secondItem="0nw-hg-SSb" secondAttribute="leading" id="y4O-pK-yFw"/>
+                        <constraint firstItem="8mZ-xl-aG7" firstAttribute="leading" secondItem="0nw-hg-SSb" secondAttribute="leading" id="zIc-JT-KKd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lS9-8C-ArE" firstAttribute="trailing" secondItem="0nw-hg-SSb" secondAttribute="trailing" id="ALi-B7-0fL"/>
+                <constraint firstItem="lS9-8C-ArE" firstAttribute="bottom" secondItem="IU0-5h-i7i" secondAttribute="bottom" id="L9T-qZ-0sW"/>
+                <constraint firstItem="IU0-5h-i7i" firstAttribute="leading" secondItem="lS9-8C-ArE" secondAttribute="leading" id="LRe-B9-aN3"/>
+                <constraint firstItem="0nw-hg-SSb" firstAttribute="top" secondItem="cMX-Xm-eQB" secondAttribute="top" id="PPU-tG-e2F"/>
+                <constraint firstItem="lS9-8C-ArE" firstAttribute="trailing" secondItem="IU0-5h-i7i" secondAttribute="trailing" id="S4F-Jx-iR3"/>
+                <constraint firstAttribute="bottom" secondItem="0nw-hg-SSb" secondAttribute="bottom" id="c0w-a4-mWl"/>
+                <constraint firstItem="0nw-hg-SSb" firstAttribute="leading" secondItem="lS9-8C-ArE" secondAttribute="leading" id="eFc-Oa-NPD"/>
+                <constraint firstItem="IU0-5h-i7i" firstAttribute="top" secondItem="lS9-8C-ArE" secondAttribute="top" id="f2b-IT-M9t"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="lS9-8C-ArE"/>
+            <connections>
+                <outlet property="clearBtn" destination="fRP-6m-bYV" id="AMd-Xs-r28"/>
+                <outlet property="deleteBtn" destination="kKi-7P-ZW8" id="pum-8o-fbT"/>
+                <outlet property="doneBtn" destination="d3U-fr-lp3" id="8yH-dx-jFe"/>
+                <outletCollection property="symbolsBtns" destination="8mZ-xl-aG7" collectionClass="NSMutableArray" id="kI7-UU-epf"/>
+                <outletCollection property="symbolsBtns" destination="WkU-J5-s0u" collectionClass="NSMutableArray" id="DWP-Sw-0ng"/>
+                <outletCollection property="symbolsBtns" destination="b67-7u-Qlx" collectionClass="NSMutableArray" id="2XL-hR-Hen"/>
+                <outletCollection property="symbolsBtns" destination="0hQ-ns-8pN" collectionClass="NSMutableArray" id="3uj-20-zQJ"/>
+                <outletCollection property="symbolsBtns" destination="u3D-gS-5BN" collectionClass="NSMutableArray" id="E2n-m9-ZER"/>
+                <outletCollection property="symbolsBtns" destination="zJw-V1-HYd" collectionClass="NSMutableArray" id="SDI-2X-0Ed"/>
+                <outletCollection property="symbolsBtns" destination="eJ1-h4-tF3" collectionClass="NSMutableArray" id="7Iv-RW-5R2"/>
+                <outletCollection property="symbolsBtns" destination="yij-zY-ckU" collectionClass="NSMutableArray" id="ifY-ug-2Sr"/>
+                <outletCollection property="symbolsBtns" destination="aqs-9g-s7g" collectionClass="NSMutableArray" id="6Cl-yT-4nS"/>
+                <outletCollection property="symbolsBtns" destination="TcP-Dh-Pw1" collectionClass="NSMutableArray" id="ivG-5j-bil"/>
+                <outletCollection property="symbolsBtns" destination="ijJ-YK-POv" collectionClass="NSMutableArray" id="pCk-s2-Cf0"/>
+            </connections>
+            <point key="canvasLocation" x="-769" y="46"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_ios_remove" width="24" height="16"/>
+    </resources>
+</document>

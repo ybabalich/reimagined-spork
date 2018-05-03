@@ -15,6 +15,8 @@ class CoinCell: UITableViewCell {
     @IBOutlet weak var coinShortName: UILabel!
     @IBOutlet weak var coinLongName: UILabel!
     @IBOutlet weak var coinPrice: UILabel!
+    @IBOutlet weak var coinRightLabel: UILabel!
+    
     @IBOutlet weak var coinLogo: ImageLoaderView!
     
     // MARK: - Variables
@@ -47,6 +49,29 @@ class CoinCell: UITableViewCell {
         coinLogo.layer.masksToBounds = true
         if let imageUrl = coin.imageUrl {
             coinLogo.loadImageFrom(url: imageUrl)
+        }
+        
+        if let price = coin.price, price.values.count > 0 { //price
+            let currentPrice = price.values[0]
+            coinPrice.text = "\(currentPrice.value)" + "\(currentPrice.currency.symbol())"
+            coin.history.loadOneDayAgoPrice { [weak self] in
+                guard let strongSelf = self else { return }
+                let dayAgoPrice = coin.history.oneDayAgo?.value ?? 0
+                let difference = currentPrice.value - dayAgoPrice
+                var textColor: UIColor? = .white
+                if difference > 0 {
+                    textColor = .green
+                } else if difference < 0 {
+                    textColor = .red
+                }
+                ui {
+                    let stringValue = String(format: "%.2f", difference) + "\(currentPrice.currency.symbol())"
+                    strongSelf.coinRightLabel.text = stringValue
+                    strongSelf.coinRightLabel.textColor = textColor
+                }
+            }
+        } else {
+            coinPrice.text = "-"
         }
     }
     

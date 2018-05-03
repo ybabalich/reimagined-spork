@@ -19,6 +19,8 @@ struct App {
     enum StoryboardName {
         static let main = "Main"
         static let coinsListVC = "CoinsListViewController"
+        static let coinsDetailVC = "CoinDetailViewController"
+        static let coinsConverterVC = "CoinsConverterViewController"
     }
     
     enum CurrencyType: String {
@@ -50,19 +52,14 @@ class Defines {
         return ["btc", "eth", "ltc"]
     }
     
-    class func currencySymbol(by type: App.CurrencyType) -> Character {
-        switch type {
-        case .usd: return "$"
-        case .eur: return "€"
-        case .uah: return "₴"
-        case .rub: return "₽"
-        }
+    class func baseCurrency() -> App.CurrencyType {
+        return .usd
     }
 }
 
 extension UIStoryboard {
     class func main() -> UIStoryboard {
-        return SwinjectStoryboard.create(name: App.StoryboardName.main, bundle: nil)
+        return SwinjectStoryboard.create(name: App.StoryboardName.main, bundle: nil, container: injectResolver)
     }
 }
 
@@ -75,5 +72,23 @@ extension SwinjectStoryboard {
 extension App.CurrencyType {
     static var allValues: [App.CurrencyType] {
         return [App.CurrencyType.usd, App.CurrencyType.eur, App.CurrencyType.uah, App.CurrencyType.rub]
+    }
+    
+    func symbol() -> Character {
+        switch self {
+        case .usd: return "$"
+        case .eur: return "€"
+        case .uah: return "₴"
+        case .rub: return "₽"
+        }
+    }
+    
+    func flag() -> Character {
+        switch self {
+        case .usd: return "🇺🇲"
+        case .eur: return "🇪🇺"
+        case .uah: return "🇺🇦"
+        case .rub: return "🇷🇺"
+        }
     }
 }

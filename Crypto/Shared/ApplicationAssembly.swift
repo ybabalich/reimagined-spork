@@ -16,7 +16,7 @@ class ApplicationAssembly {
     static let assembler: Assembler  = {
         return Assembler([
             SharedAssembly(),
-            CoinsAssembly()
+            CoinsListAssembly()
             ])
     }()
 }
@@ -29,6 +29,9 @@ class ApplicationAssembly {
 class SharedAssembly: Assembly {
     
     func assemble(container: Container) {
+        container.register(CryptoSettings.self) { (resolver) -> CryptoSettings in
+            return Settings.instance
+        }
         
         //examples
 //        container.register(InternetConnectionService.self) { _ in InternetConnectionService.instance }

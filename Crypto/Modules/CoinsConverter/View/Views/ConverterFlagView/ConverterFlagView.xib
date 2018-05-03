@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ConverterFlagView" customModule="Crypto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="55" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇺🇲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc3-KC-osx">
+                    <rect key="frame" x="12.5" y="0.0" width="30" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="I1S-El-3hN"/>
+                        <constraint firstAttribute="height" constant="25" id="fic-VB-BuV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5HB-3t-MZP">
+                    <rect key="frame" x="0.0" y="25" width="55" height="20"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="9"/>
+                    <color key="textColor" red="1" green="0.89019607840000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bottom_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="vus-mQ-pmW">
+                    <rect key="frame" x="50" y="22" width="5" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="vus-mQ-pmW" secondAttribute="height" multiplier="77:38" id="e0e-yp-Eaw"/>
+                        <constraint firstAttribute="width" constant="5" id="rxf-Z1-kSN"/>
+                    </constraints>
+                </imageView>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="rFf-zs-7fp">
+                    <rect key="frame" x="12.5" y="0.0" width="30" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="edS-ix-2ct"/>
+                        <constraint firstAttribute="width" constant="30" id="nz2-P2-F49"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vus-mQ-pmW" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="91N-kM-3Mz"/>
+                <constraint firstItem="5HB-3t-MZP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="DAq-c3-6Mi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5HB-3t-MZP" secondAttribute="trailing" id="DhX-rl-r5f"/>
+                <constraint firstItem="5HB-3t-MZP" firstAttribute="top" secondItem="dc3-KC-osx" secondAttribute="bottom" id="VRo-Gk-maO"/>
+                <constraint firstAttribute="trailing" secondItem="vus-mQ-pmW" secondAttribute="trailing" id="ZWq-Bh-qcH"/>
+                <constraint firstItem="5HB-3t-MZP" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="b0E-Md-HAv"/>
+                <constraint firstItem="5HB-3t-MZP" firstAttribute="centerX" secondItem="dc3-KC-osx" secondAttribute="centerX" id="b0u-YH-g13"/>
+                <constraint firstItem="rFf-zs-7fp" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="gDh-s8-dqI"/>
+                <constraint firstItem="dc3-KC-osx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="htO-Y5-VWm"/>
+                <constraint firstItem="rFf-zs-7fp" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sDM-MR-HYI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="flagLabel" destination="dc3-KC-osx" id="Vct-wt-UFe"/>
+                <outlet property="image" destination="rFf-zs-7fp" id="M1u-G6-Vqd"/>
+                <outlet property="textLabel" destination="5HB-3t-MZP" id="JCV-tO-3a9"/>
+            </connections>
+            <point key="canvasLocation" x="-515" y="-280"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_bitcoin" width="64" height="64"/>
+        <image name="ic_bottom_arrow" width="114" height="62"/>
+    </resources>
+</document>
